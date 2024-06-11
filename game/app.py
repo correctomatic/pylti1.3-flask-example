@@ -24,8 +24,9 @@ class ReverseProxied:
             environ['wsgi.url_scheme'] = scheme
         return self.app(environ, start_response)
 
-
-app = Flask('pylti1p3-game-example', template_folder='templates', static_folder='static')
+app = Flask('pylti1p3-game-example', template_folder='templates', static_folder='static',
+        root_path=os.path.join(os.getcwd(), 'game')
+        )
 app.wsgi_app = ReverseProxied(app.wsgi_app)
 
 config = {
