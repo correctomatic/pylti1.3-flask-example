@@ -1,20 +1,20 @@
 {
-    "http://imsglobal.org": [{
+    "http://localhost:8080": [{
         "default": true,
-        "client_id": "pytest12345",
-        "auth_login_url": "https://lti-ri.imsglobal.org/platforms/370/authorizations/new",
-        "auth_token_url": "https://lti-ri.imsglobal.org/platforms/370/access_tokens",
-        "key_set_url": "https://lti-ri.imsglobal.org/platforms/370/platform_keys/361.json",
+        "client_id": "35BKAOcTCin0Nvd",
+        "auth_login_url": "http://localhost:8080/mod/lti/auth.php",
+        "auth_token_url": "http://localhost:8080/mod/lti/token.php",
+        "key_set_url": "http://localhost:8080/mod/lti/certs.php",
         "key_set": {
             "keys": [
                 {
                     "kty": "RSA",
-                    "e": "AQAB",
-                    "n": "r3WB5ECKptJliYft6F_XJysCy1KevoGJgKNHgdVR20lplUv1SzRH1mifzOmEzxWM0kj6blS7SRxK9GFGs6optHAmzcb6_joegKzLHSj14RRVSoI0MgyltJcAl8z6d4yZ9KobV8OvpICnMgsGO20Wih-Cq-oSUjtJT7WET3GZmzmM9MzamiGsCtC0dUWdDOW1FOMzTt8et9YA5jOfkLdJdPyZ5mdUZjBkYMlDGoD8fPRPdS9M-uczxvUeuKvyy1BVGlu5AG0xy-wN1tKjSE1iuC5Kkm39CZwQXBRpStDExWw_ApzP40SK3CKez4ls3jjkE3i4CpJSgLn1D8rT6wOpJw",
-                    "kid": "uhMfBQzVLmaJNU9c1am2X9pTzcEYhgYL2hO6hbYAvdw",
                     "alg": "RS256",
+                    "kid": "35eb1e0e3b81312e3c44",
+                    "e": "AQAB",
+                    "n": "04Bape3c5RTV5YliVwywPbUmH0inVVE_0_1doKUdaAr9ziNUQSALwB6o9Ek2UTmq966aRWGV3KWUmJrpzkNckbWxEMbSmbXgUbRDaf2hzk1S3oeDLEn9dHrXGRuzVnrnQXS-fY_SKzup21I03LrcySyDudLqByoZ5nHnMc211vxODra6t1MwtWeSOoeDFhYIm8GiAMmof1_0YkxakDeBmzgrYzD1kxdEY9gTHdBFVBh7ZrBh6Iin8CunE5wuFN2x8d9XRUU93UFpiPXjERk7pLdeiV9CX9LJRDOHlZIyO8b0JBDK1g4cOUKbKU18sSpW8UqXN1rjxYSbOid4aTfFvw",
                     "use": "sig"
-                }
+                    }
             ]
         },
         "private_key_file": "private.key",
